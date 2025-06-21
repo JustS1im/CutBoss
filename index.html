@@ -237,65 +237,62 @@
                     <div class="container">
                         <div class="row">
 
-                            <div class="col-lg-10 col-12 mx-auto">
-                                <form action="#" method="post" class="custom-form booking-form" id="bb-booking-form" role="form">
-                                    <div class="text-center mb-5">
-                                        <h2 class="mb-1">Book a seat</h2>
+                           <div class="col-lg-10 col-12 mx-auto">
+    <!-- ONLY ONE form tag -->
+    <form action="https://formsubmit.co/fkaranja248@gmail.com" method="POST" class="custom-form booking-form" id="bb-booking-form" role="form">
+        
+        <!-- Disable CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false">
 
-								<!-- Booking Form using Formsubmit -->
-								<form action="https://formsubmit.co/fkaranja248@gmail@gmail.com" method="POST">
-								 
-								<!-- Disable CAPTCHA -->
-								<input type="hidden" name="_captcha" value="false">
+        <!-- Redirect to a thank you page after submission -->
+        <input type="hidden" name="_next" value="https://CutBoss.com/thank-you.html">
 
-								<!-- Redirect to a thank you page after submission -->
-								<input type="hidden" name="_next" value="https://CutBoss.com/thank-you.html">
+        <div class="text-center mb-5">
+            <h2 class="mb-1">Book a seat</h2>
+            <p>Please fill out the form and we get back to you</p>
+        </div>
 
-								
-                                        <p>Please fill out the form and we get back to you</p>
-                                    </div>
+        <div class="booking-form-body">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <input type="text" name="bb-name" class="form-control" placeholder="Full name" required>
+                </div>
 
-                                    <div class="booking-form-body">
-                                        <div class="row">
+                <div class="col-lg-6 col-12">
+                    <input type="tel" class="form-control" name="bb-phone" placeholder="Mobile 070-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
 
-                                            <div class="col-lg-6 col-12">
-                                                <input type="text" name="bb-name" id="bb-name" class="form-control" placeholder="Full name" required>
-                                            </div>
+                <div class="col-lg-6 col-12">
+                    <input class="form-control" type="time" name="bb-time" value="18:30" />
+                </div>
 
-                                            <div class="col-lg-6 col-12">
-                                                <input type="tel" class="form-control" name="bb-phone" placeholder="Mobile 070-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
-                                            </div>
-                                        
-                                            <div class="col-lg-6 col-12">
-                                                <input class="form-control" type="time" name="bb-time" value="18:30" />
-                                            </div>
+                <div class="col-lg-6 col-12">
+                    <select class="form-select form-control" name="bb-branch">
+                        <option selected>Select Branches</option>
+                        <option value="Githurai 45">Githurai 45</option>
+                        <option value="Nairobi">Nairobi (opens soon)</option>
+                        <option value="Thika">Thika (opens soon)</option>
+                    </select>
+                </div>
 
-                                            <div class="col-lg-6 col-12">
-                                                <select class="form-select form-control" name="bb-branch" id="bb-branch" aria-label="Default select example">
-                                                    <option selected="">Select Branches</option>
-                                                    <option value="Githurai 45">Githurai 45</option>
-                                                    <option value="Nairobi">Nairobi(opens soon)</option>
-                                                    <option value="Thika">Thika(opens soon)</option>
-                                                </select>
+                <div class="col-lg-6 col-12">
+                    <input type="date" name="bb-date" class="form-control" required>
+                </div>
 
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <input type="date" name="bb-date" id="bb-date" class="form-control" placeholder="Date" required>
-                                            </div>
+                <div class="col-lg-6 col-12">
+                    <input type="number" name="bb-number" class="form-control" placeholder="Number of People" required>
+                </div>
+            </div>
 
-                                            <div class="col-lg-6 col-12">
-                                                <input type="number" name="bb-number" id="bb-number" class="form-control" placeholder="Number of People" required>
-                                            </div>
-                                        </div>
+            <textarea name="bb-message" rows="3" class="form-control" placeholder="Comment (Optional)"></textarea>
 
-                                        <textarea name="bb-message" rows="3" class="form-control" id="bb-message" placeholder="Comment (Optionals)"></textarea>
+            <div class="col-lg-4 col-md-10 col-8 mx-auto mt-3">
+                <button type="submit" class="form-control">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
 
-                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                            <button type="submit" class="form-control">Submit</button>
-                                        </div>
-                                    </div>
-                                </form>
-                        </div>
                     </div>
                 </section>
 
